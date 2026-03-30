@@ -6,3 +6,4 @@ __pycache__/
 *.safetensors
 *.pt
 *.pth
+.idea/
