@@ -1,13 +1,13 @@
 # SAM3 Local Project
 
-Локальный проект с исходным кодом SAM3 и правками для запуска на Mac.
+Local project with SAM3 source code and modifications to run on Mac (CPU).
 
-## Что внутри
-- локальная папка `sam3/` с исходным кодом
-- `test_sam3_hf.py` — пример запуска
-- правки для совместимости с Mac/CPU
+## Contents
+- local `sam3/` folder with full source code
+- `test_sam3_hf.py` — example script to run the model
+- compatibility fixes for Mac / CPU environment
 
-## Установка
+## Installation
 
 ```bash
 git clone https://github.com/ArseniiShalamov/sam3-hf-clean.git
