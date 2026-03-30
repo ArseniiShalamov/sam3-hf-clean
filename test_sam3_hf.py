@@ -52,7 +52,7 @@ if device == "cpu":
 
         print("Running prompt...")
         output = processor.set_text_prompt(
-            prompt="a dog",
+            prompt="leg",
             state=state,
         )
 else:
@@ -60,9 +60,44 @@ else:
 
     print("Running prompt...")
     output = processor.set_text_prompt(
-        prompt="a dog",
+        prompt="leg",
         state=state,
     )
 
 print("Done!")
 print(output.keys())
+
+
+
+import numpy as np
+from PIL import Image
+
+mask = output["masks"]
+
+print("Mask shape:", mask.shape)
+
+mask = mask[0]
+if len(mask.shape) == 4:
+    mask = mask[0]
+if len(mask.shape) == 3:
+    mask = mask[0]
+
+mask = mask.cpu().numpy()
+mask = (mask > 0).astype(np.uint8) * 255
+
+# resize mask to match image
+mask = Image.fromarray(mask)
+mask = mask.resize(image.size)
+mask = np.array(mask)
+
+image_np = np.array(image)
+
+overlay = image_np.copy()
+overlay[mask == 255] = [0, 200, 0]
+
+alpha = 0.5
+result = (image_np * (1 - alpha) + overlay * alpha).astype(np.uint8)
+
+Image.fromarray(result).save("output.png")
+
+print("Saved result to output.png")
