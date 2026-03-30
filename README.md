@@ -1,10 +1,18 @@
-# SAM3 Mac CPU Run
+# SAM3 Local Project
 
-This project runs SAM3 on Mac (CPU/MPS compatible version).
+Локальный проект с исходным кодом SAM3 и правками для запуска на Mac.
 
-## Setup
+## Что внутри
+- локальная папка `sam3/` с исходным кодом
+- `test_sam3_hf.py` — пример запуска
+- правки для совместимости с Mac/CPU
+
+## Установка
 
 ```bash
-python -m venv .venv
+git clone https://github.com/ArseniiShalamov/sam3-hf-clean.git
+cd sam3-hf-clean
+
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
