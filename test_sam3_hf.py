@@ -1,3 +1,8 @@
+import sys
+import os
+
+sys.path.insert(0, os.path.abspath("."))
+
 from PIL import Image
 import torch
 from sam3.model_builder import build_sam3_image_model
