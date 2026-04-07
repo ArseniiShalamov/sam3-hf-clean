@@ -11,8 +11,6 @@ OUTPUT_DIR = Path("./mac_outputs")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 
-from PIL import Image
-
 def load_alpha_mask(path: Path, target_hw=None) -> np.ndarray:
     img = Image.open(path).convert("RGBA")
     alpha = np.array(img)[:, :, 3]
@@ -127,7 +125,7 @@ def build_mesh_from_points(points: np.ndarray, tag: str):
 
 
 def main():
-    mode = "c2w"
+    mode = "w2c"
     print(f"\n=== Using extrinsic mode: {mode} ===")
     points = collect_points(mode=mode)
     print("Collected points:", points.shape)
