@@ -23,3 +23,5 @@ experiments/mv_sam3d_try/MV-SAM3D/da3_outputs/
 
 # Local data
 data/raw/
+
+experiments/mv_sam3d_try/Depth-Anything-3/
