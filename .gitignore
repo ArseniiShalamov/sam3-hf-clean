@@ -21,3 +21,6 @@ experiments/mv_sam3d_try/MV-SAM3D/mac_outputs/
 
 # External repos
 experiments/mv_sam3d_try/Depth-Anything-3/
+
+data/
+experiments/mv_sam3d_try/MV-SAM3D/data/
