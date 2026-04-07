@@ -1,26 +1,25 @@
 # Python
-.venv/
 __pycache__/
 *.pyc
 
-# macOS
+# Mac
 .DS_Store
-
-# Models / weights
-*.safetensors
-*.pt
-*.pth
-.hf/
 
 # IDE
 .idea/
 
-# Outputs
+# Virtual env
+.venv/
+
+# Data / outputs
 outputs/
 experiments/mv_sam3d_try/MV-SAM3D/mac_outputs/
+experiments/mv_sam3d_try/MV-SAM3D/da3_outputs/
 
-# External repos
-experiments/mv_sam3d_try/Depth-Anything-3/
+# Models
+*.pt
+*.pth
+*.safetensors
 
-data/
-experiments/mv_sam3d_try/MV-SAM3D/data/
+# Local data
+data/raw/
