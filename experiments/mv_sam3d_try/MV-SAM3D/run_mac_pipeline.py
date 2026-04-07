@@ -1,8 +1,12 @@
-import os
+from pathlib import Path
 import subprocess
+import os
 
 SCENE = "my_leg_scene"
 OBJECT = "leg"
+
+BASE_DIR = Path(__file__).resolve().parent
+os.chdir(BASE_DIR)
 
 print("\n=== STEP 1: Segmentation (SAM3) ===")
 subprocess.run([
