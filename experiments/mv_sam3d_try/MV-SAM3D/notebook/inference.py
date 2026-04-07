@@ -2,7 +2,10 @@
 import os
 
 # not ideal to put that here
-os.environ["CUDA_HOME"] = os.environ["CONDA_PREFIX"]
+import os
+
+if "CONDA_PREFIX" in os.environ:
+    os.environ["CUDA_HOME"] = os.environ["CONDA_PREFIX"]
 os.environ["LIDRA_SKIP_INIT"] = "true"
 
 import sys
@@ -22,10 +25,21 @@ import numpy as np
 import gradio as gr
 import matplotlib.pyplot as plt
 from copy import deepcopy
-from kaolin.visualize import IpyTurntableVisualizer
-from kaolin.render.camera import Camera, CameraExtrinsics, PinholeIntrinsics
+# from kaolin.visualize import IpyTurntableVisualizer
+# from kaolin.render.camera import Camera, CameraExtrinsics, PinholeIntrinsics
 import builtins
-from pytorch3d.transforms import quaternion_multiply, quaternion_invert
+try:
+    from pytorch3d.transforms import quaternion_multiply, quaternion_invert
+except ImportError:
+    print("WARNING: pytorch3d not found, using fallback")
+
+    import numpy as np
+
+    def quaternion_multiply(q1, q2):
+        return q1  # временно
+
+    def quaternion_invert(q):
+        return q  # временно
 
 import sam3d_objects  # REMARK(Pierre) : do not remove this import
 from sam3d_objects.pipeline.inference_pipeline_pointmap import InferencePipelinePointMap

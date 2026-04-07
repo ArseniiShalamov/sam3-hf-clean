@@ -9,14 +9,21 @@ from torch.utils._pytree import tree_map_only
 
 
 def set_attention_backend():
+    import torch
+    import os
+
     if torch.cuda.is_available():
         gpu_name = torch.cuda.get_device_name(0)
+    else:
+        gpu_name = "cpu"
 
     logger.info(f"GPU name is {gpu_name}")
-    if "A100" in gpu_name or "H100" in gpu_name or "H200" in gpu_name:
-        # logger.info("Use flash_attn")
-        os.environ["ATTN_BACKEND"] = "flash_attn"
-        os.environ["SPARSE_ATTN_BACKEND"] = "flash_attn"
+
+    # Только если есть GPU — используем оптимизации
+    if torch.cuda.is_available():
+        if "A100" in gpu_name or "H100" in gpu_name or "H200" in gpu_name:
+            os.environ["ATTN_BACKEND"] = "flash_attn"
+            os.environ["SPARSE_ATTN_BACKEND"] = "flash_attn"
 
 set_attention_backend()
 

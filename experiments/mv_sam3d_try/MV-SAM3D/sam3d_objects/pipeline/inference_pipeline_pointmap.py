@@ -8,8 +8,38 @@ import torchvision
 from loguru import logger
 from PIL import Image
 
-from pytorch3d.renderer import look_at_view_transform
-from pytorch3d.transforms import Transform3d
+try:
+    from pytorch3d.renderer import look_at_view_transform
+except ImportError:
+    print("WARNING: pytorch3d not found, using fallback camera")
+
+    import numpy as np
+
+    try:
+        from pytorch3d.renderer import look_at_view_transform
+        from pytorch3d.transforms import Transform3d
+
+    except ImportError:
+        print("WARNING: pytorch3d not found, using fallback")
+
+        import numpy as np
+
+
+        def look_at_view_transform(dist, elev, azim):
+            R = np.eye(3)[None]  # (1, 3, 3)
+            T = np.array([[0.0, 0.0, dist]])  # (1, 3)
+            return R, T
+
+
+        class Transform3d:
+            def __init__(self, *args, **kwargs):
+                pass
+
+            def compose(self, other):
+                return self
+
+            def inverse(self):
+                return self
 
 from sam3d_objects.model.backbone.dit.embedder.pointmap import PointPatchEmbed
 from sam3d_objects.pipeline.inference_pipeline import InferencePipeline
