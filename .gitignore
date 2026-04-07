@@ -8,3 +8,8 @@ __pycache__/
 *.pth
 .idea/
 *.png
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+outputs/
