@@ -1,66 +1,99 @@
-# SAM3 Multi-View 3D Project
+# SAM3 + MV-SAM3D 3D Reconstruction Pipeline
 
-This repository is a single organized project built around the following pipeline:
+## Overview
 
-1. **2D segmentation with SAM3**
-2. **Mask generation and visualization**
-3. **Multi-view scene preparation**
-4. **MV-SAM3D preprocessing experiments**
-5. **Future 3D reconstruction stage**
+This project builds a 3D reconstruction pipeline from multiple 2D images using:
 
-The project is currently being developed and tested on **Mac**, with a structure designed to support both:
-- local SAM3 experiments
-- future multi-view 3D reconstruction workflows
+- SAM3 (segmentation)
+- Depth Anything 3 (depth + pointmaps)
+- Custom reconstruction backend (Mac-compatible)
 
----
+Pipeline:
 
-## Project Goals
-
-The main goal of this project is to reconstruct a **3D model from multiple images** of the same object.
-
-Current test case:
-- 3 images of a human leg
-- segmentation with SAM3
-- binary masks for each view
-- multi-view scene preparation for MV-SAM3D
+Images → Segmentation (SAM3) → Masks → Depth (DA3) → Pointmaps → 3D Reconstruction → Mesh (.ply)
 
 ---
 
-## Current Status
+## ⚙️ Features
 
-### Working
-- SAM3 runs locally
-- text-guided segmentation works
-- binary masks are generated
-- overlay visualization is generated
-- project structure was reorganized
-- MV-SAM3D preprocessing was adapted to run on Mac in CPU-safe mode
-- multi-view scene preprocessing works on Mac
-
-### In Progress
-- depth stage / DA3 exploration on Mac
-- full 3D reconstruction stage
+- Works on Mac (CPU-only)
+- Modular pipeline:
+  - segmentation
+  - depth estimation
+  - reconstruction
+- Supports multiple reconstruction backends
 
 ---
 
-## Repository Structure
+## 🧠 Mac-compatible Reconstruction
 
-```text
-sam3_hf_clean/
-├── README.md
-├── requirements.txt
-├── test_sam3_hf.py
-├── sam3/
-│
-├── data/
-│   ├── raw/         # input images
-│   ├── masks/       # binary masks
-│   ├── overlay/     # mask visualization
-│   └── scenes/      # prepared scene folders
-│
-├── outputs/         # optional outputs
-├── docs/            # project notes / docs
-│
-└── experiments/
-    └── mv_sam3d_try/
-        └── MV-SAM3D/
+Since the original MV-SAM3D pipeline depends on PyTorch3D (GPU/Linux),
+a custom reconstruction backend was implemented using Open3D.
+
+File:
+mac_reconstruct.py
+
+This backend:
+- loads masks and DA3 pointmaps
+- merges multi-view 3D points
+- builds a point cloud
+- reconstructs a mesh using Poisson reconstruction
+- exports `.ply`
+
+---
+
+## ▶️ How to Run (Mac)
+
+### 1. Segmentation
+
+python preprocessing/build_mvsam3d_dataset.py --input data/my_leg_scene --objects leg
+
+---
+
+### 2. Depth (DA3)
+
+python scripts/run_da3.py \
+  --image_dir ./data/my_leg_scene/images \
+  --output_dir ./da3_outputs/my_leg_scene \
+  --device cpu \
+  --no_vis
+
+---
+
+### 3. 3D Reconstruction (Mac)
+
+python mac_reconstruct.py
+
+---
+
+## 📦 Output
+
+Results are saved in:
+
+mac_outputs/
+
+Files:
+- leg_pointcloud_c2w.ply
+- leg_mesh_c2w.ply
+
+---
+
+## 🧪 Notes
+
+- Two extrinsic modes were tested: w2c and c2w
+- c2w produced correct geometry and is used as default
+
+---
+
+## 🔮 Future Work
+
+- Add GPU backend (PyTorch3D)
+- Improve mesh quality
+- Multi-object reconstruction
+- Integration into unified pipeline interface
+
+---
+
+## 👨‍💻 Author
+
+Arsenii Shalamov
