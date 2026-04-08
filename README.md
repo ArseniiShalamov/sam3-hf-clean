@@ -1,99 +1,94 @@
-# SAM3 + MV-SAM3D 3D Reconstruction Pipeline
+# 🦵 3D Leg Reconstruction Pipeline (SAM3 + Depth + Open3D)
 
-## Overview
-
-This project builds a 3D reconstruction pipeline from multiple 2D images using:
-
-- SAM3 (segmentation)
-- Depth Anything 3 (depth + pointmaps)
-- Custom reconstruction backend (Mac-compatible)
+This project reconstructs a **3D model of a human leg** from multiple 2D images.
 
 Pipeline:
-
-Images → Segmentation (SAM3) → Masks → Depth (DA3) → Pointmaps → 3D Reconstruction → Mesh (.ply)
-
----
-
-## ⚙️ Features
-
-- Works on Mac (CPU-only)
-- Modular pipeline:
-  - segmentation
-  - depth estimation
-  - reconstruction
-- Supports multiple reconstruction backends
+1. Image → Segmentation (SAM3)
+2. Segmentation → Depth (DA3)
+3. Depth → Point Cloud → 3D Mesh (Open3D)
 
 ---
 
-## 🧠 Mac-compatible Reconstruction
+# 📁 Project Structure
 
-Since the original MV-SAM3D pipeline depends on PyTorch3D (GPU/Linux),
-a custom reconstruction backend was implemented using Open3D.
-
-File:
-mac_reconstruct.py
-
-This backend:
-- loads masks and DA3 pointmaps
-- merges multi-view 3D points
-- builds a point cloud
-- reconstructs a mesh using Poisson reconstruction
-- exports `.ply`
+data/
+├── my_leg/                  
+├── answer_test_sam3_hf/     
+└── answer_test_3d/          
 
 ---
 
-## ▶️ How to Run (Mac)
+# 📸 Step 1 — Add your images
 
-### 1. Segmentation
+Put your images here:
 
-python preprocessing/build_mvsam3d_dataset.py --input data/my_leg_scene --objects leg
+data/my_leg/
 
----
+Example:
 
-### 2. Depth (DA3)
-
-python scripts/run_da3.py \
-  --image_dir ./data/my_leg_scene/images \
-  --output_dir ./da3_outputs/my_leg_scene \
-  --device cpu \
-  --no_vis
+data/my_leg/0.png  
+data/my_leg/1.png  
+data/my_leg/2.png  
 
 ---
 
-### 3. 3D Reconstruction (Mac)
+# 🧠 Step 2 — Run segmentation
 
-python mac_reconstruct.py
+python test_sam3_hf.py
+
+Result:
+
+data/answer_test_sam3_hf/
 
 ---
 
-## 📦 Output
+# 🍏 If you have HEIC (Mac)
 
-Results are saved in:
+sips -s format png data/raw/IMG_7064.HEIC --out data/my_leg/0.png  
+sips -s format png data/raw/IMG_7065.HEIC --out data/my_leg/1.png  
+sips -s format png data/raw/IMG_7066.HEIC --out data/my_leg/2.png  
 
-mac_outputs/
+---
+
+# ✅ Check images
+
+file data/my_leg/0.png  
+file data/my_leg/1.png  
+file data/my_leg/2.png  
+
+---
+
+# 🧊 Step 3 — 3D reconstruction
+
+python experiments/mv_sam3d_try/MV-SAM3D/run_mac_pipeline.py  
+
+---
+
+# 📦 Result
+
+ls data/answer_test_3d  
 
 Files:
-- leg_pointcloud_c2w.ply
-- leg_mesh_c2w.ply
+
+leg_pointcloud_w2c.ply  
+leg_mesh_w2c.ply  
 
 ---
 
-## 🧪 Notes
+# 👁️ View 3D
 
-- Two extrinsic modes were tested: w2c and c2w
-- c2w produced correct geometry and is used as default
-
----
-
-## 🔮 Future Work
-
-- Add GPU backend (PyTorch3D)
-- Improve mesh quality
-- Multi-object reconstruction
-- Integration into unified pipeline interface
+python -c "import open3d as o3d; p=o3d.io.read_point_cloud('data/answer_test_3d/leg_pointcloud_w2c.ply'); o3d.visualization.draw_geometries([p])"
 
 ---
 
-## 👨‍💻 Author
+# 🎯 Goal
 
-Arsenii Shalamov
+Detect medical risks (e.g. swelling, edema) using 3D leg reconstruction.
+
+---
+
+# 🚀 Next
+
+- Improve mesh
+- Combine views
+- Add ML model
