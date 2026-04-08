@@ -25,3 +25,7 @@ experiments/mv_sam3d_try/MV-SAM3D/da3_outputs/
 data/raw/
 
 experiments/mv_sam3d_try/Depth-Anything-3/
+
+data/*/*
+!data/*/.gitkeep
+*.ply

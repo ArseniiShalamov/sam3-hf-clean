@@ -7,7 +7,9 @@ from PIL import Image
 SCENE_DIR = Path("./data/my_leg_scene")
 DA3_FILE = Path("./da3_outputs/my_leg_scene/da3_output.npz")
 OBJECT_NAME = "leg"
-OUTPUT_DIR = Path("./mac_outputs")
+OUTPUT_DIR = Path("../../../data/answer_test_3d")
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 
