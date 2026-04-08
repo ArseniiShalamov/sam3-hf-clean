@@ -11,7 +11,7 @@ __pycache__/
 # Virtual env
 .venv/
 
-# Data / outputs
+# Outputs
 outputs/
 experiments/mv_sam3d_try/MV-SAM3D/mac_outputs/
 experiments/mv_sam3d_try/MV-SAM3D/da3_outputs/
@@ -21,11 +21,12 @@ experiments/mv_sam3d_try/MV-SAM3D/da3_outputs/
 *.pth
 *.safetensors
 
-# Local data
-data/raw/
-
+# External repos
 experiments/mv_sam3d_try/Depth-Anything-3/
 
+# Data (keep structure only)
 data/*/*
 !data/*/.gitkeep
+
+# 3D files
 *.ply
