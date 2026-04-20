@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d6363343-5c6e-4c36-9811-e86563053fb6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/answer_test_3d/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/answer_test_sam3_hf/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/CODE_OF_CONDUCT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/environments/default.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/mac_reconstruct.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/notebook/inference.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/notebook/load_images_and_masks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/notebook/mesh_alignment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/preprocessing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/preprocessing/build_mvsam3d_dataset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/preprocessing/data_organizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/preprocessing/sam3_segmenter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/requirements.dev.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/requirements.inference.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/requirements.p3d.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/run_inference.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/run_inference_weighted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/run_mac_pipeline.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/config/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/config/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/data/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/data/dataset/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/data/dataset/tdfy/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/data/dataset/tdfy/img_and_mask_transforms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/data/dataset/tdfy/img_processing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/data/dataset/tdfy/pose_target.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/data/dataset/tdfy/preprocessor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/data/dataset/tdfy/transforms_3d.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/data/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/dit/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/dit/embedder/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/dit/embedder/dino.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/dit/embedder/embedder_fuser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/dit/embedder/point_remapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/dit/embedder/pointmap.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/generator/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/generator/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/generator/classifier_free_guidance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/generator/flow_matching/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/generator/flow_matching/model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/generator/flow_matching/solver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/generator/shortcut/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/generator/shortcut/model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/models/mm_latent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/models/mot_sparse_structure_flow.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/models/sparse_structure_flow.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/models/sparse_structure_vae.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/models/structured_latent_flow.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/models/structured_latent_vae/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/models/structured_latent_vae/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/models/structured_latent_vae/decoder_gs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/models/structured_latent_vae/decoder_mesh.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/models/structured_latent_vae/decoder_rf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/models/structured_latent_vae/encoder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/models/timestep_embedder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/attention/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/attention/full_attn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/attention/modules.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/norm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/sparse/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/sparse/attention/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/sparse/attention/full_attn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/sparse/attention/masked_sdpa.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/sparse/attention/modules.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/sparse/attention/serialized_attn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/sparse/attention/windowed_attn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/sparse/basic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/sparse/conv/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/sparse/conv/conv_spconv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/sparse/linear.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/sparse/nonlinearity.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/sparse/norm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/sparse/spatial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/sparse/transformer/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/sparse/transformer/blocks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/sparse/transformer/modulated.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/spatial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/transformer/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/transformer/blocks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/transformer/modulated.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/modules/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/renderers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/renderers/gaussian_render.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/renderers/octree_renderer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/renderers/sh_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/representations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/representations/gaussian/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/representations/gaussian/gaussian_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/representations/gaussian/general_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/representations/mesh/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/representations/mesh/cube2mesh.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/representations/mesh/flexicubes/flexicubes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/representations/mesh/flexicubes/tables.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/representations/mesh/utils_cube.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/representations/octree/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/representations/octree/octree_dfs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/representations/radiance_field/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/representations/radiance_field/strivec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/utils/postprocessing_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/utils/random_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/backbone/tdfy_dit/utils/render_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/io.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/model/layers/llama3/ff.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/pipeline/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/pipeline/depth_models/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/pipeline/depth_models/moge.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/pipeline/inference_pipeline.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/pipeline/inference_pipeline_pointmap.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/pipeline/inference_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/pipeline/layout_post_optimization_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/pipeline/multi_view_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/pipeline/multi_view_weighted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/pipeline/preprocess_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/pipeline/utils/pointmap.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/pose_align/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/pose_align/pose_optimization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/utils/coordinate_transforms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/utils/cross_attention_logger.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/utils/latent_weighting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/utils/visualization/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/utils/visualization/image_mesh.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/utils/visualization/plotly/plot_scene.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/utils/visualization/plotly/save_scene.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/sam3d_objects/utils/visualization/scene_visualizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/mv_sam3d_try/MV-SAM3D/scripts/run_da3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mv_sam3d_try/Depth-Anything-3/src/depth_anything_3/utils/export/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mv_sam3d_try/Depth-Anything-3/src/depth_anything_3/utils/export/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_sam3_hf.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_sam3_hf.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="3BeoW3MOXMJAzn5yH4oWTOyJS1w" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-657d8234b839-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.74" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d6363343-5c6e-4c36-9811-e86563053fb6" name="Changes" comment="" />
+      <created>1774858924825</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1774858924825</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

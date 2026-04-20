@@ -15,7 +15,7 @@ pip install -r requirements.txt
 python test_sam3_hf.py
 
 # Run 3D pipeline
-python experiments/mv_sam3d_try/MV-SAM3D/run_mac_pipeline.py
+python mv_sam3d_try/MV-SAM3D/run_mac_pipeline.py
 
 
 # 🦵 3D Leg Reconstruction Pipeline (SAM3 + Depth + Open3D)
@@ -123,7 +123,7 @@ Files:
 
 # 🧊 Step 3 — 3D reconstruction
 
-python experiments/mv_sam3d_try/MV-SAM3D/run_mac_pipeline.py  
+python mv_sam3d_try/MV-SAM3D/run_mac_pipeline.py  
 
 ---
 

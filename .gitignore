@@ -1,32 +1,27 @@
-# Python
+# virtual envs
+.venv/
+.venv_official/
+
+# python cache
 __pycache__/
 *.pyc
+*.pyo
 
-# Mac
-.DS_Store
-
-# IDE
-.idea/
-
-# Virtual env
-.venv/
-
-# Outputs
-outputs/
-experiments/mv_sam3d_try/MV-SAM3D/mac_outputs/
-experiments/mv_sam3d_try/MV-SAM3D/da3_outputs/
-
-# Models
-*.pt
+# model weights / checkpoints
+checkpoints/
+*.ckpt
 *.pth
+*.pt
 *.safetensors
 
-# External repos
-experiments/mv_sam3d_try/Depth-Anything-3/
+# outputs
+visualization/
+da3_outputs/
+outputs/
+result.zip
 
-# Data (keep structure only)
-data/*/*
-!data/*/.gitkeep
+# local data
+*.npz
 
-# 3D files
-*.ply
+# mac
+.DS_Store
